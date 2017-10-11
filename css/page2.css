@@ -1,0 +1,251 @@
+/*
+******************
+* FONTS
+******************
+*/
+.central-container h2{
+    color:#0082c6;
+}
+.central-container h3{
+    color:#0082c6;
+}
+.central-container h4{
+    color:#0082c6;
+}
+
+/*
+******************
+* HEAD
+******************
+*/
+.head-grey{
+    width: 100%;
+    height: 70px;
+    background: #dcdcdc;
+}
+.head-grey h3{    
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    color:#0082c6;
+}
+
+/*
+******************
+* CENTRAL-CONTAINER
+******************
+*/
+.central-container{
+    margin-left: 23%;
+    margin-right: 23%;
+    height: 100%;
+    clear: both;    
+}
+/*
+******************
+* SECTION-ONE
+******************
+*/
+/*
+******************
+* TITLE-FOR-PARTS
+******************
+*/
+.title-for-parts{    
+    height: 70px;
+}
+.title-for-parts hr{
+    border:none;
+    height: 1px;
+    background-color: #5dc5ef;
+}
+.title-for-parts hr:first-child{
+    margin-top: 40px;     
+}
+.title-for-parts hr:last-child{
+    margin-top: 30px;    
+}
+.title-text{  
+   margin: auto;
+   width: 270px;   
+   clear: both;
+   position: relative;
+   padding-top: 10px;
+   text-align: center;
+}
+.title-for-parts h4{    
+    color:#5dc5ef;
+    text-align: center;
+    float: left; 
+    width: 250px;
+    margin: auto;
+}
+.title-for-parts .circleVisible{
+    float: left;
+}
+.title-for-parts .circleVisible:last-child{
+    float: right;
+}
+/*
+******************
+* INFO-BOX
+******************
+*/
+
+.part-one{
+    height: auto;       
+}
+.fist-section{   
+    clear: both;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;  
+}
+/* .info-box{
+    clear: both;
+} */
+.info-box h5{
+    text-align: right;    
+}
+.container-for-info{
+    float: left;
+    width: 45%;
+    min-width: 250px;
+    height: 100%;
+    clear: both;
+    margin-right: 5%;
+}
+.container-for-info h4{
+    text-align: center;
+}
+.img-1{
+    border: 5px solid #e8e8e8;
+    width: 48%;
+    height: 80%;
+    margin-top: 60px;
+    float: left;
+    min-width: 250px;
+}
+.img-1 img{
+    width: 100%;    
+}
+.info-first, .info-second{
+    position: relative;
+    padding-top: 20px;
+}
+.info-second{
+    padding-top: 30px;
+}
+.blue-box-info{
+    width: 100%;
+    height: 150px;
+    background: #c3e4e9;
+    margin-top: 20px;
+    min-width: 330px;
+    /* position: absolute;
+    z-index: 1; */
+}
+.blue-box-info h5{
+    padding-top: 40px;
+    text-align: center;
+}
+.circle-with-number{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border:1px solid #5dc5ef;
+    /* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    border-radius: 25px;    
+    margin-top: 7px;
+    position: absolute;
+    z-index: 2;
+    left:42%;
+    top:10px;
+}
+.info-second .circle-with-number{
+    top:20px;
+}
+.circle-with-number h2{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 900;    
+}
+.bottom-first-section{
+    text-align:center;
+}
+.bottom-first-section h5{
+    text-align:right;
+}
+.title-light-blue{
+    color: #0082c6;
+}
+.bottom-first-section button{
+    padding: 10px 150px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 1em;
+}
+/*
+******************
+* SECTION-TWO
+******************
+*/
+.section-two h5{
+    text-align: right;
+}
+.img-2{
+    text-align: center;
+}
+.img-2 img{
+    width: 85%;
+}
+.text-center{
+    text-align: center;
+    padding: 20px 0;
+}
+.container-for-boxes {
+    clear: both;
+    height: 200px;
+}
+.container-for-boxes .blue-box-info{
+    width: 47%;
+    
+}
+.container-for-boxes .blue-box-info:first-child{
+    float: left;
+}
+.container-for-boxes .blue-box-info:last-child{
+    float: right;
+}
+.blue-box-info h5{
+    padding-top: 40px;
+    text-align: center;
+}
+.reletive{
+    position: relative;
+}
+.blue-box-info .circle-with-number{
+    top: -30px;
+}
+/*
+******************
+* SECTION-THREE
+******************
+*/
+.section-three{
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+.section-three h3{
+    text-align: center;
+    color: #5dc5ef;
+    font-weight: 500;
+}
+.section-three hr{
+    border:none;
+    height: 1px;
+    background-color: #5dc5ef;
+    margin-top: 10px;
+   
+}

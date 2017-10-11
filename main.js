@@ -1,17 +1,20 @@
 var NavLinks = document.querySelectorAll('.nav-link');
-var circuses = document.querySelectorAll('.circle');
-
-
 for (var i = 0; i < NavLinks.length; i++) {
     var navLink = NavLinks[i];
-    navLink.addEventListener('click', function () {      
-        for (var i = 0; i < circuses.length; i++) {
-           var circle = circuses[i];
-           circle.style.display='none';
-        }
-        var theLastChild = navLink.lastChild;
-        theLastChild.style.display='block';   
-      
+    navLink.addEventListener('click', function (event) {
+    		var allNavs = document.querySelectorAll('.nav-link div');
+        for (var it = 0; it < allNavs.length; it++){
+        	console.log(allNavs[it]);
+          allNavs[it].classList.add('invisible');
+          allNavs[it].classList.remove('circleVisible');
+         }
+        console.log(allNavs);
+    		var targetElement = event.target || event.srcElement;
+        var circleDiv = targetElement.parentNode.querySelectorAll('div');
+        console.log(circleDiv[0]);
+        circleDiv[0].classList.add('circleVisible');
+        circleDiv[0].classList.remove('invisible');
+        console.log(circleDiv[0]);
     }
     );  
   }

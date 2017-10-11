@@ -10,9 +10,18 @@ body{
 h1, h2, h3,h4,h5,h6,a{
     font-weight: 100;
 }
+h1{
+    font-size:3.5em;
+}
+h2{
+    font-size: 2em;
+}
 h3{
     font-size: 1.5em;
 } 
+h4{
+    font-size: 1.2em;
+}
 h6{
     font-size: 0.6em;
 }  
@@ -20,24 +29,15 @@ a{
     text-decoration: none;
     color: black;
 }
-body{
-    font-size: 16px;
-    font-family: 'roboto';  
-}
-h1, h2, h3,h4,h5,h6,a{
-    font-weight: 100;
-}
-h3{
-    font-size: 1.5em;
-} 
-h6{
-    font-size: 0.6em;
-}  
-a{
-    text-decoration: none;
-    color: black;
-}
+button{
+    background-color: #0082c6;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2em;
+    margin-top: 20px;
 
+}
 /*
 ******************
 * HEADER
@@ -75,17 +75,32 @@ a{
     color: #1885c8;
     font-weight: 900;
 }
-.circle {
+/* .circle {
     display: none;
 	width: 8px;
 	height: 8px;
 	background: #5dc5ef;
 	/* -moz-border-radius: 50px;
 	-webkit-border-radius: 50px; */
-    border-radius: 4px;
+    /* border-radius: 4px;
     margin: auto;
     margin-top: 7px;
-}
+} */ 
+.circleVisible{
+    display: block;
+    width: 8px;
+      height: 8px;
+      background: #5dc5ef;
+      /* -moz-border-radius: 50px;
+      -webkit-border-radius: 50px; */
+      border-radius: 4px;
+      margin: auto;
+      margin-top: 7px;
+  }
+  
+  .invisible {
+      display: none;
+  }
 /*
 ******************
 * ABOUT US
@@ -141,15 +156,8 @@ a{
     background-color: #D8D8D8; 
 }
 .fist-button{
-    padding: 10px 40px;
-    background: #0082c6;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    font-size: 1.2em;
-    margin-top: 20px;
-    float: right; 
-         
+    padding: 10px 40px;  
+    float: right;     
 }
 /*
 ******************
@@ -226,11 +234,8 @@ a{
 .blue-big button{
     padding: 10px 30px;
     background: #61c2ee;
-    border: 1px solid white;
-    color: white;
-    border-radius: 15px;
-    font-size: 1em;
-    margin-top: 20px;
+    border: 1px solid white;    
+    font-size: 1em;    
 }
 .blue-big table{
     margin-top: 50px;
@@ -261,10 +266,9 @@ a{
     width: 100%;
     height: 50px;
     background: grey; 
-    
+    margin-bottom: 0px;
 }
-.footer-content{ 
-    
+.footer-content{     
     margin-left: 18%;
     margin-right: 18%;
     clear: both;
@@ -278,3 +282,4 @@ footer h4:first-child{
 footer h4:last-child{
     float: right;
 }
+

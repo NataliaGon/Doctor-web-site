@@ -1,0 +1,32 @@
+.popular-question{
+    margin-top: 30px;
+}
+.popular-question li{
+    /* margin-top: 1.5%; */
+    border-bottom: 2px solid #5dc5ef; 
+}
+.popular-question li:last-child{
+    border-bottom:none;
+}
+.popular-question ul  li{
+    color: #5dc5ef;
+    min-height: 50px;
+    /* vertical-align: middle; */
+    /* display: inline-block; */
+   
+}
+.popular-question ul  h5{
+    color: black;
+    margin-right: 30px;
+}
+.popular-question ul  h6{
+    color: black;
+    margin-right: 30px;
+}
+.icon-caret-left{
+    position: absolute;    
+    /* padding-top: 1.5%; */
+}
+.hidden{
+    display: none;
+}

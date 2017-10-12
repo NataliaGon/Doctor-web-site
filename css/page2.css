@@ -1,21 +1,7 @@
-/*
-******************
-* FONTS
-******************
-*/
-.central-container h2{
-    color:#0082c6;
-}
-.central-container h3{
-    color:#0082c6;
-}
-.central-container h4{
-    color:#0082c6;
-}
 
 /*
 ******************
-* HEAD
+* HEAD-GREY
 ******************
 */
 .head-grey{
@@ -30,17 +16,7 @@
     color:#0082c6;
 }
 
-/*
-******************
-* CENTRAL-CONTAINER
-******************
-*/
-.central-container{
-    margin-left: 23%;
-    margin-right: 23%;
-    height: 100%;
-    clear: both;    
-}
+
 /*
 ******************
 * SECTION-ONE
@@ -139,7 +115,7 @@
 .blue-box-info{
     width: 100%;
     height: 150px;
-    background: #c3e4e9;
+    background: #eaf7fd;
     margin-top: 20px;
     min-width: 330px;
     /* position: absolute;
@@ -235,7 +211,6 @@
 */
 .section-three{
     margin-top: 50px;
-    margin-bottom: 400px;
 }
 .section-three h3{
     text-align: center;
@@ -246,6 +221,102 @@
     border:none;
     height: 1px;
     background-color: #5dc5ef;
-    margin-top: 10px;
-   
+    margin-top: 10px;   
+}
+.section-three h5{
+    text-align: right;
+}
+.section-three .title-light-blue2{
+    color: #5dc5ef;
+    padding-top: 30px;
+    text-align: right;;
+}
+.img-3{
+    text-align: center;
+}
+.img-3 img{
+    width: 90%;
+}
+.img-4{
+    text-align: center;
+}
+.img-4 img{
+    width: 60%;
+}
+.img-5{
+    text-align: center;
+}
+.img-5 img{
+    width: 80%;
+}
+/*
+******************
+* SECTION-FOUR
+******************
+*/
+.section-four{
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+.section-four h5{
+    text-align: right;
+}
+.text-part-1{
+    float: left;
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+}
+.text-part-2{
+    float: right;
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+}
+.section-four .container-for-boxes{
+    margin-top: 20px;
+}
+.section-four table{
+border-spacing:15px;
+border-collapse: separate;  
+}
+.section-four tr td:first-child{
+    border-right: 3px solid #5dc5ef;
+}
+.section-four table h5{
+    padding-right: 10px;
+    
+}
+.section-four .td-number{ 
+color: #0082c6;
+}
+.img-and-text-container{
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+}
+.img-6{
+    text-align: center;
+    float: left;
+    width: 60%
+}
+.img-6 img{
+    width: 80%;
+    border: 5px solid #e8e8e8;
+}
+.box-for-text{
+    width: 40%;
+    float: right;
+}
+.box-for-text ul{
+    margin-top: 20px;
+    list-style-type: disc;
+    text-align: right;
+    font-size: 0.9em;
+}
+.box-for-text ul li{
+    color: #5dc5ef;
+}
+.box-for-text ul span{
+    color: black;
 }

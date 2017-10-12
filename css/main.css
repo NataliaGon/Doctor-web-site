@@ -5,7 +5,7 @@
 */
 body{
     font-size: 16px;
-    font-family: 'roboto';  
+    font-family: 'OpenSansHebrew';  
 }
 h1, h2, h3,h4,h5,h6,a{
     font-weight: 100;
@@ -22,10 +22,14 @@ h3{
 h4{
     font-size: 1.2em;
 }
+h5{
+    font-size: 0.9em;
+}
 h6{
     font-size: 0.6em;
 }  
-a{
+a{ 
+    font-size: 0.9em;
     text-decoration: none;
     color: black;
 }
@@ -38,6 +42,55 @@ button{
     margin-top: 20px;
 
 }
+@font-face{    
+    font-family: 'OpenSansHebrew';    
+    src: url('./fonts/OpenSansHebrew-Regular.ttf');
+}
+   
+@font-face{
+    font-family:'OpenSansHebrew-Bold';
+    src: url('./fonts/OpenSansHebrew-Bold.ttf');  
+}
+@font-face{  
+    font-family:'OpenSansHebrew-ExtraBold';
+    src: url('./fonts/OpenSansHebrew-ExtraBold.ttf');
+}
+/*
+******************
+* CENTRAL-CONTAINER
+******************
+*/
+.central-container{
+    margin-left: 23%;
+    margin-right: 23%;
+    height: 100%;
+    clear: both;    
+}
+.central-container h2{
+    color:#0082c6;
+}
+.central-container h3{
+    color:#0082c6;
+}
+.central-container h4{
+    color:#0082c6;
+}
+/*
+******************
+* HEAD-GREY
+******************
+*/
+.head-grey{
+    width: 100%;
+    height: 70px;
+    background: #dcdcdc;
+}
+.head-grey h3{    
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    color:#0082c6;
+}    
 /*
 ******************
 * HEADER
@@ -50,6 +103,9 @@ button{
     margin-left: 18%;
     margin-right: 18%;     
 }
+.nav-body{
+    clear: both;
+}
 .nav-body  ul{
     text-align: right;
 }
@@ -60,20 +116,24 @@ button{
 }
 #logo{
     margin-right: 0px;
+    float: right;
+    
 }
 .nav-body ul li{
     line-height: 0.6;
 }
 #logo{    
-    margin-top: -10px;
+    margin-top: -15px;
 } 
 #logo-light-blue{
     color: #5dc5ef;
     font-weight: 900;
+    font-family: 'OpenSansHebrew-ExtraBold';
 }
 #logo-dark-blue{
     color: #1885c8;
     font-weight: 900;
+    font-family: 'OpenSansHebrew-ExtraBold';
 }
 /* .circle {
     display: none;
@@ -210,7 +270,8 @@ button{
     vertical-align: middle;     
 }
 .blue-big{
-    height:330px;
+    height:auto;
+    min-height: 330px;
     width:100%;
     background:#61c2ee;
     position: absolute;
@@ -222,6 +283,7 @@ button{
     text-align: right;
     padding-right: 20px;
     padding-top: 10px;
+    font-size: 0.9em;
 }
 .column-container h3{
     color: white;
@@ -266,20 +328,21 @@ button{
     width: 100%;
     height: 50px;
     background: grey; 
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 .footer-content{     
     margin-left: 18%;
     margin-right: 18%;
     clear: both;
+    height: 30px;
 }
-footer h4{
+.footer h4{
     margin-top:15px;
 }
-footer h4:first-child{
+.footer h4:first-child{
     float: left;
 }
-footer h4:last-child{
+.footer h4:last-child{
     float: right;
 }
 

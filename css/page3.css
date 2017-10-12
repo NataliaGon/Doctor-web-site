@@ -1,0 +1,93 @@
+.about-me{
+    position: relative;
+    /* clear: both; */
+    margin-top: 20px;
+    /* height: 100%; */
+}
+.container{
+    height: auto;
+    min-height: 500px;
+    /* clear: both; */
+}
+.text-about-me{    
+    float: left;
+    width: 52%; 
+    margin-right: 10%;  
+    margin-top: 30px; 
+    /* clear: both;     */
+   
+}
+.text-about-me h5{
+    text-align: right;
+}
+.my-photo{
+    float: left;
+    width: 38%;
+    text-align: right;
+    margin-top: 40px;
+}
+.my-photo img{    
+    width: 110%;
+}
+.text-about-me hr{
+    border:none;
+    height: 1px;
+    background-color: #5dc5ef;
+    margin-top: 10px; 
+    /* width: 60%; */   
+}
+.my-cv{
+    list-style-type: disc;
+}
+.my-cv  li{
+    color: #5dc5ef;
+}
+.my-cv  span{
+    color: black;
+}
+ /* ul > li:before{
+    content: '';
+    position: absolute; top: 5px; left: 0;
+    width: 9px;
+    height: 9px;
+    background: #f00; 
+    border-radius: 50%;    
+}
+ul > li:after{
+    content: '';
+    position: absolute; top: 9px; left: 4px;
+    width: 14px;
+    height: 1px;
+    background: #f00;     
+}
+ ul > li:last-child:before{
+    background: none;
+}
+ ul > li:last-child:after{
+    width: 40%;
+    top: 39px
+} */
+/* .my-cv li{
+    border-right:3px solid #5dc5ef;
+
+} */
+.believe{
+    margin: 20px 0px 70px 0px;
+    background: #eaf7fd;  
+    height: 350px;
+    width: 100%; 
+    text-align: right; 
+    padding: 40px 20px 0px 20px;
+}
+
+.believe h3{
+    text-align: right;
+    color: #0082c6;
+    font-weight: 500;
+}
+.believe hr{
+    border:none;
+    height: 1px;
+    background-color: #5dc5ef;
+    margin-top: 10px;   
+}

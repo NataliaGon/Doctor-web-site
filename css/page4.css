@@ -1,5 +1,5 @@
 .popular-question{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .popular-question li{
     /* margin-top: 1.5%; */
@@ -24,9 +24,18 @@
     margin-right: 30px;
 }
 .icon-caret-left{
-    position: absolute;    
+    position: absolute;  
+    /* display: block;   */
     /* padding-top: 1.5%; */
 }
-.hidden{
+
+
+.question{
+    cursor: pointer;
+}
+.answer{
+    display: none;
+}
+.icon-caret-down{
     display: none;
 }

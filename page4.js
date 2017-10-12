@@ -1,20 +1,40 @@
 var questions = document.querySelectorAll('.question');
-for (var i = 0; i < NavLinks.length; i++) {
-    var navLink = NavLinks[i];
-    // navLink.addEventListener('click', function (event) {
-    // 		var allNavs = document.querySelectorAll('.nav-link div');
-    //     for (var it = 0; it < allNavs.length; it++){
-    //     	console.log(allNavs[it]);
-    //       allNavs[it].classList.add('invisible');
-    //       allNavs[it].classList.remove('circleVisible');
-    //      }
-    //     console.log(allNavs);
-    // 		var targetElement = event.target || event.srcElement;
-    //     var circleDiv = targetElement.parentNode.querySelectorAll('div');
-        console.log('123');
-    //     circleDiv[0].classList.add('circleVisible');
-    //     circleDiv[0].classList.remove('invisible');
-    //     console.log(circleDiv[0]);
-    }
-    );  
-  }
+for (var i = 0; i < questions.length; i++) {
+    var question = questions[i];
+    question.addEventListener('click', function (event) {
+                  
+            
+            var targetElement = event.target;
+
+            var allAnswers = targetElement.parentNode.querySelectorAll('.answer');           
+            if (allAnswers[0].style.display=="block"){
+                allAnswers[0].style.display="none";
+            }
+            else { 
+            allAnswers[0].style.display="block";
+            }
+            
+
+            var allCaretsLeft = targetElement.parentNode.querySelectorAll('.icon-caret-left');
+            if (allCaretsLeft[0].style.display=="none"){
+                allCaretsLeft[0].style.display="block";
+            }
+            else { 
+                allCaretsLeft[0].style.display="none";
+            }
+                
+           
+
+            var allCaretsDown = targetElement.parentNode.querySelectorAll('.icon-caret-down');
+            if (allCaretsDown[0].style.display=="block"){
+                allCaretsDown[0].style.display="none";
+            }
+            else { 
+                allCaretsDown[0].style.display="block";
+            }
+    
+            
+        }
+    
+    );
+}

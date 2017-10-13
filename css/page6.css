@@ -1,0 +1,59 @@
+.central-container{
+    margin-left: 18%;
+    margin-right: 18%;   
+}
+.container{
+    clear: both;
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+}
+
+.photo-doctor{
+    float: left;
+    width: 40%;    
+    height: 100%;
+}
+.photo-doctor img{    
+    width: 120%;
+}
+.form-for-users{    
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+.icon-facebook{
+    color: #5dc5ef;
+    border: 2px solid #5dc5ef;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 2em;
+}
+.form{
+    margin-top:30px;
+    text-align: center;  
+}
+.form textarea{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #5dc5ef;
+    text-align: right;
+    padding-right: 10px;
+    resize: none;
+}
+.form-for-users button{
+    padding: 10px 80px;
+        
+}
+.form-for-users h5{
+    margin-top: 20px;
+}
+#number-light-blue{
+    color:#5dc5ef;
+    font-size: 2em;
+}
+#error{
+    display: none;
+    color:red;
+}

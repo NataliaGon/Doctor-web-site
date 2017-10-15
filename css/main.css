@@ -68,7 +68,8 @@ button{
     margin-left: 23%;
     margin-right: 23%;
     height: 100%;
-    clear: both;    
+    clear: both;  
+     
 }
 .central-container h2{
     color:#0082c6;
@@ -101,34 +102,14 @@ button{
 ******************
 */
 .nav-container{   
-    height: 10px;
+    height: 60px;
     background: white;
-    padding: 30px 0px 40px 0px;  
-    margin-left: 18%;
-    margin-right: 18%;     
+    padding: 20px 0px 0px 0px;  
+    margin: auto;          
 }
-.nav-body{
-    clear: both;
-}
-.nav-body  ul{
-    text-align: right;
-}
-.nav-body  ul li{
-    display: inline- block;
-    float: left;
-    margin-right: 30px;    
-}
-#logo{
-    margin-right: 0px;
-    float: right;
-    
-}
-.nav-body ul li{
+.nav-body  ul li, #logo{
     line-height: 0.6;
 }
-#logo{    
-    margin-top: -15px;
-} 
 #logo-light-blue{
     color: #5dc5ef;
     font-weight: 900;
@@ -139,34 +120,158 @@ button{
     font-weight: 900;
     font-family: 'OpenSansHebrew-ExtraBold';
 }
-/* .circle {
-    display: none;
-	width: 8px;
-	height: 8px;
-	background: #5dc5ef;
-	/* -moz-border-radius: 50px;
-	-webkit-border-radius: 50px; */
-    /* border-radius: 4px;
-    margin: auto;
-    margin-top: 7px;
-} */ 
-.circleVisible{
+#logo{
+    margin-right: 0px;
+    float: right;
+    /* margin-top: -15px;  */
+}
+.menu-link{
+    display:none;
+}
+.contact-box{
+    float: right;
+    border: 1px solid #5dc5ef;
+    width: 90px;
+    height: 20px;
+    margin-right: 10px; 
+}
+.contact-box h6, .contact-box .icon-mobile{
+    float: right;
+    display: block;
+    color:#1885c8;
+}
+.contact-box .icon-mobile{
+    font-size: 0.8em;
+    margin-top: 3px;
+}
+ @media (min-width: 978px) {
+    .nav-container{          
+        margin-left: 10%;
+        margin-right: 10%;     
+    }    
+    .nav-body  ul{
+    text-align: right;
+    }
+    .nav-body  ul li{
+    display: inline- block;
+    float: right;
+    margin-right: 30px; 
+    font-size: 1em;
+     
+}
+   .circleVisible{
     display: block;
     width: 8px;
-      height: 8px;
-      background: #5dc5ef;
-      /* -moz-border-radius: 50px;
-      -webkit-border-radius: 50px; */
-      border-radius: 4px;
-      margin: auto;
-      margin-top: 7px;
-  }
-  
-  .invisible {
-      display: none;
-  }
-  .clear{
+    height: 8px;
+    background: #5dc5ef;
+    /* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 7px;
+}  
+   .invisible {
+   display: none;
+}
+    .clear{
     clear: both;
+}
+    .icon-mobile, .icon-menu,.icon-cross {
+    display: none;
+}
+    
+}
+@media (max-width: 1400px){
+    .nav-container{ 
+        margin-left: 12%;
+        margin-right: 12%;     
+    }
+   
+}
+@media (max-width: 1260px){
+    .nav-container{ 
+        margin-left: 1%;
+        margin-right: 1%;     
+    }
+    
+   
+}
+@media (max-width: 978px){
+    .nav-container{          
+        margin-left: 5%;
+        margin-right: 5%;     
+    }
+    /* .nav-link{
+       display: none;
+   } */
+    #logo{
+       display: block;
+       float: left;
+   }
+   .icon-mobile, .icon-menu,.icon-cross{
+       display: block;
+       float: right;
+       color: #0082c6;
+       font-size: 2em;
+       margin-top: 0px;
+   }
+   .icon-mobile{
+    margin-right: 20px;
+}
+.list-menu{
+    display:none;
+}
+.menu-link ~ .icon-menu {  
+    display: block;   	   
+}
+.menu-link ~ .icon-cross {
+    display: none;
+}
+.menu-link:checked ~ .icon-menu {
+    display: none;
+}
+.menu-link:checked ~ .icon-cross {
+    display: block;
+}    
+.menu-link:checked ~ .list-menu {
+    display: block;
+    background: #abb4b8;
+    position: absolute;
+    line-height: 0.6;
+    top: 80px;
+    right:0px; 
+    width: 200px;
+    height: auto;
+    margin-right: 0px;
+    z-index: 3;
+    padding: 20px 40px 60px 20px;
+    text-align: right;  
+}
+   .list-menu li{
+       margin-top: 20px;
+       margin-right: 20px;
+   }
+   .circleVisible{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5dc5ef;
+    /* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    border-radius: 4px;
+    float: right;
+    margin-left: 10px;
+    /* margin-left: 210px;
+    margin-top: -10px; */
+    /* margin: auto; */
+    /* margin-top: 7px; */
+}  
+   .invisible {
+   display: none;
+}
+.contact-box{
+    display: none;
+}
 }
 /*
 ******************

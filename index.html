@@ -6,6 +6,8 @@
     </title>
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-menu.css">
+    <link rel="stylesheet" href="css/style-facebook.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -13,17 +15,32 @@
 <body>
     <header class="nav-container">
         <nav class="nav-body">
-            <ul>
+            <input id="menu" class="menu-link" type="checkbox">
+            <label class="icon-menu" for="menu"></label>
+            <label class="icon-cross" for="menu"></label>
+
+            <a href="tel:+78142332211"><span class="icon-mobile" title="050-426-20-21"></span></a> 
+            
+            <div id="logo">
+                    <h3>
+                        <span id="logo-light-blue"> ד"ר </span>
+                        <span id="logo-dark-blue"> שי מרון אלדר </span>
+                    </h3>
+                    <br>
+                    <h6> פתרונות כירורגיים להשמנת יתר וניתוחים זעיר פולשניים</h6>
+                </div>
+                <ul class="list-menu">
+                    
+
+
+
+
                 <li class="nav-link">
-                    <a href="#">צור קשר</a>
+                    <a href="#">ראשי</a>
                     <div class="invisible"></div>
                 </li>
                 <li class="nav-link">
-                    <a href="#">המלצות ומאמרים</a>
-                    <div class="invisible"></div>
-                </li>
-                <li class="nav-link">
-                    <a href="#">שאלות נפוצות</a>
+                    <a href="#">אודות ההליכים</a>
                     <div class="invisible"></div>
                 </li>
                 <li class="nav-link">
@@ -31,22 +48,31 @@
                     <div class=""></div>
                 </li>
                 <li class="nav-link">
-                    <a href="#">אודות ההליכים</a>
+                    <a href="#">שאלות נפוצות</a>
                     <div class="invisible"></div>
                 </li>
                 <li class="nav-link">
-                    <a href="#">ראשי</a>
+                    <a href="#">המלצות ומאמרים</a>
                     <div class="invisible"></div>
                 </li>
-                <li id="logo">
-                    <h3>
-                        <span id="logo-light-blue"> ד"ר </span>
-                        <span id="logo-dark-blue"> שי מרון אלדר </span>
-                    </h3>
-                    <br>
-                    <h6> פתרונות כירורגיים להשמנת יתר וניתוחים זעיר פולשניים</h6>
+                <li class="nav-link">
+                    <a href="#">צור קשר</a>
+                    <div class="invisible"></div>
                 </li>
+
             </ul>
+
+            <div class="contact-box">
+                    <span class="icon-mobile"></span>
+                    <h6>
+                        050-426-20-21
+                    </h6>
+
+            </div>
+            
+
+
+
         </nav>
     </header>
     <div class="about-us">
@@ -177,17 +203,19 @@
 
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-content">
-            <h4>לקביעת תור לד"ר אלדר חייגו 052-4262021 </h4>
-            <h4>ד"ר שי מרון אלדר פתרונות כירורגיים להשמנת יתר </h4>
-        </div>
-        
-    </footer>
+
+    <div class="clear"></div>
 
 
     <script src="main.js"></script>
 
 </body>
+<footer class="footer">
+    <div class="footer-content">
+        <h4>לקביעת תור לד"ר אלדר חייגו 052-4262021 </h4>
+        <h4>ד"ר שי מרון אלדר פתרונות כירורגיים להשמנת יתר </h4>
+    </div>
+
+</footer>
 
 </html>

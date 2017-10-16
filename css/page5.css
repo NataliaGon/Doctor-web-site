@@ -4,37 +4,28 @@
     height: 100%;
 }
 .container-for-all-videos{  
-    width: 100%;
+    width: 100%;    
+    height: 100%;
     margin-top: 30px;
 }
 .container-for-video{
     margin: 10px;
-    width: 46%;      
-    text-align: center;
-}
-.container-for-video:nth-child(odd){
-    float: left;    
-}
-.container-for-video:nth-child(even){
-    float: right;    
+    width: 46%;
+    min-width: 250px;   
 }
 .container-for-video h4{
     margin-top: 10px;
+    text-align: center;
 }
 .bottom-info-container{
     width: 80%;
-    margin: 50px auto 150px auto;          
+            
 }
 .text-btn-box{    
     width: 45%;
     margin:15px;   
     text-align: center; 
-}
-.text-btn-box:nth-child(odd){
-    float: left;
-}
-.text-btn-box:nth-child(even){
-    float: right;
+    min-width: 250px;
 }
 .text-cont{
     background: #eaf7fd;
@@ -69,3 +60,35 @@ hr{
     height: auto;
     min-height: 150px;
 }
+@media (min-width: 978px){
+    .container-for-video:nth-child(odd){
+        float: left;    
+    }
+    .container-for-video:nth-child(even){
+        float: right;    
+    }
+    .text-btn-box:nth-child(odd){
+        float: left;
+    }
+    .text-btn-box:nth-child(even){
+        float: right;
+    }
+}
+@media (min-width: 440px){
+    .bottom-info-container{
+        
+        margin: 50px auto 150px auto;          
+    }
+}
+@media (max-width: 978px){   
+    .text-btn-box{
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: 15px auto;
+    }
+    .container-for-video{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}    

@@ -115,6 +115,9 @@ button{
 .nav-body  ul li, #logo{
     line-height: 0.6;
 }
+.list-menu {
+    margin-top: 10px;
+}
 #logo-light-blue{
     color: #5dc5ef;
     font-weight: 900;
@@ -141,13 +144,15 @@ button{
     margin-right: 10px; 
 }
 .contact-box h6, .contact-box .icon-mobile{
+    margin-top: 3px;
     float: right;
     display: block;
     color:#1885c8;
 }
 .contact-box .icon-mobile{
     font-size: 0.8em;
-    margin-top: 3px;
+    margin-top: 4px;
+    margin-right: 4px;
 }
  @media (min-width: 978px) {
     .nav-container{          
@@ -164,7 +169,7 @@ button{
     font-size: 1em;
      
 }
-   .circleVisible{
+.list-menu   .circleVisible{
     display: block;
     width: 8px;
     height: 8px;
@@ -175,7 +180,7 @@ button{
     margin: auto;
     margin-top: 7px;
 }  
-   .invisible {
+.list-menu   .invisible {
    display: none;
 }
     .clear{
@@ -245,11 +250,12 @@ button{
     padding: 20px 40px 60px 20px;
     text-align: right;  
 }
+
    .list-menu li{
        margin-top: 20px;
        margin-right: 20px;
    }
-   .circleVisible{
+   .list-menu .circleVisible{
     display: block;
     width: 8px;
     height: 8px;
@@ -260,7 +266,7 @@ button{
     float: right;
     margin-left: 10px;   
 }  
-   .invisible {
+.list-menu  .invisible {
    display: none;
 }
    .contact-box{

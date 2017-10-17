@@ -22,7 +22,6 @@
     z-index: 2;
     bottom: 0px;
 }
-
 .info-text{
     position: absolute;
     z-index: 2;
@@ -230,3 +229,4 @@
         height: 350px;          
     }
 }
+

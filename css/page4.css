@@ -1,35 +1,34 @@
 .popular-question{
     margin-top: 50px;
 }
-.popular-question li{
-    /* margin-top: 1.5%; */
+.popular-question ul li{     
     border-bottom: 2px solid #5dc5ef; 
+    color: #5dc5ef;
+    min-height: 30px;  
+    position: relative;    
 }
-.popular-question li:last-child{
+.popular-question ul li::before,.popular-question ul li::after{
+    content:"";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.popular-question ul li:last-child{
     border-bottom:none;
 }
-.popular-question ul  li{
+.popular-question ul  h5,.popular-question ul  h6{    
+    color: black;
+    margin-right: 30px;
+}
+.icon-caret-down, .icon-caret-left{
     color: #5dc5ef;
-    min-height: 50px;
-    /* vertical-align: middle; */
-    /* display: inline-block; */
-   
-}
-.popular-question ul  h5{
-    color: black;
-    margin-right: 30px;
-}
-.popular-question ul  h6{
-    color: black;
-    margin-right: 30px;
+    font-size: 1em;
 }
 .question .icon-caret-left{
-    position: absolute;  
-    /* display: block;   */
-    /* padding-top: 1.5%; */
+    position: absolute;   
+    top:50%; 
+    margin-top: -0.5em;
 }
-
-
 .question{
     cursor: pointer;
 }

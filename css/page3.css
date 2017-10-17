@@ -5,17 +5,12 @@
 .container{
     height: 100%;   
 }
-.text-about-me{     
-    
-    /* margin-right: 10%;   */
+.text-about-me{  
     margin-top: 30px; 
     height: 100%;  
-}
-.text-about-me h5{
     text-align: right;
 }
-.my-photo{    
-    
+.my-photo{  
     margin-top: 40px;
     height: 100%;
 }
@@ -27,53 +22,45 @@
     height: 1px;
     background-color: #5dc5ef;
     margin-top: 10px; 
-    /* width: 60%; */   
+    width: 60%;  
+    display: inline-block;
 }
 .my-cv{
     list-style-type: disc;
 }
 .my-cv  li{
     color: #5dc5ef;
+    position: relative;
 }
 .my-cv  span{
     color: black;
 }
- /* ul > li:before{
-    content: '';
-    position: absolute; top: 5px; left: 0;
-    width: 9px;
-    height: 9px;
-    background: #f00; 
-    border-radius: 50%;    
-}
-ul > li:after{
-    content: '';
-    position: absolute; top: 9px; left: 4px;
-    width: 14px;
-    height: 1px;
-    background: #f00;     
-}
- ul > li:last-child:before{
-    background: none;
-}
- ul > li:last-child:after{
-    width: 40%;
-    top: 39px
-} */
-/* .my-cv li{
-    border-right:3px solid #5dc5ef;
+/* li:before {
+    content: "";
+    position: absolute;
+    right: -17px;
+    border-left: 1px solid #5dc5ef;
+    width: 1px;
+    height: 58px; // change with my-cv.height in less
+  }
 
-} */
-.believe{
-    /* margin: 20px 0px 70px 0px; */
+  li:first-child:before {
+    top: 15px;//Don't draw before first bullet
+  }
+
+  li:last-child:before {
+    height: 6px; //Don't draw after last bullet
+  }
+   */
+
+.believe{    
     background: #eaf7fd;  
     height: 100%;
     width: 100%; 
     text-align: right; 
     margin-top: 30px;
-    /* padding: 40px 20px 0px 20px; */
+    padding: 40px 20px 20px 20px;
 }
-
 .believe h3{
     text-align: right;
     color: #0082c6;
@@ -83,7 +70,9 @@ ul > li:after{
     border:none;
     height: 1px;
     background-color: #5dc5ef;
-    margin-top: 10px;   
+    margin-top: 10px;  
+    width: 30%;  
+    display: inline-block;
 }
 @media (min-width: 978px){ 
     .text-about-me{     

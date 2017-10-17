@@ -5,23 +5,12 @@
 .container{
     clear: both;
     margin-top: 50px;
-    height: 600px;
+    height: 100%;
     width: 100%;
 }
-
-.photo-doctor{
-    float: left;
-    width: 40%;    
-    height: 100%;
-}
-.photo-doctor img{    
-    width: 120%;
-}
 .form-for-users{    
-    float: right;
-    width: 50%;
-    height: 100%;
-    text-align: right;
+    margin-top: 20px; 
+    text-align: center;
 }
 .icon-facebook{
     color: #5dc5ef;
@@ -43,17 +32,38 @@
     resize: none;
 }
 .form-for-users button{
-    padding: 10px 80px;
-        
+    padding: 10px 80px;        
 }
 .form-for-users h5{
     margin-top: 20px;
 }
 #number-light-blue{
     color:#5dc5ef;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 #error{
     display: none;
     color:red;
 }
+@media (min-width: 690px){    
+    .photo-doctor{
+        float: left;
+        width: 40%;    
+        height: 100%;
+    }
+    .photo-doctor img{    
+        width: 120%;
+    }
+    .form-for-users{    
+        float: right;
+        width: 50%;
+        height: 100%;
+        text-align: right;
+    }
+}   
+@media (max-width: 690px){
+    .photo-doctor img{    
+        width: 90%;
+    }
+
+}    

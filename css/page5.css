@@ -11,15 +11,13 @@
 .container-for-video{
     margin: 10px;
     width: 46%;
-    min-width: 250px;   
+    min-width: 250px; 
+    min-height: 240px;  
+    text-align: center;
 }
 .container-for-video h4{
     margin-top: 10px;
-    text-align: center;
-}
-.bottom-info-container{
-    width: 80%;
-            
+   
 }
 .text-btn-box{    
     width: 45%;
@@ -31,6 +29,7 @@
     background: #eaf7fd;
     text-align: right;
     padding: 10px;
+    
 }
 .blue-text{
     color: #1885c8;
@@ -75,8 +74,7 @@ hr{
     }
 }
 @media (min-width: 440px){
-    .bottom-info-container{
-        
+    .bottom-info-container{        
         margin: 50px auto 150px auto;          
     }
 }

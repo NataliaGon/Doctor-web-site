@@ -17,26 +17,25 @@
 
 <body>
     <div class="all-content">
-        <header class="nav-container">
+        <header>
             <nav class="nav-body">
+                <a href="#" class="contact-box">
+                    <span class="icon-mobile"></span>
+                    <h6>
+                        050-426-20-21
+                    </h6>
+                </a>
+
                 <input id="menu" class="menu-link" type="checkbox">
                 <label class="icon-menu" for="menu"></label>
                 <label class="icon-cross" for="menu"></label>
-
-                <a href="tel:+972-50-426-20-21">
+                <a id="a-icon-mob" href="tel:+972-50-426-20-21">
                     <span class="icon-mobile" title="050-426-20-21"></span>
                 </a>
 
-                <div id="logo">
-                    <h3>
-                        <span id="logo-light-blue"> ד"ר </span>
-                        <span id="logo-dark-blue"> שי מרון אלדר </span>
-                    </h3>
-                    <br>
-                    <h6> פתרונות כירורגיים להשמנת יתר וניתוחים זעיר פולשניים</h6>
-                </div>
-                <ul class="list-menu">
 
+
+                <ul class="list-menu" dir="rtl">
                     <li class="nav-link">
                         <a href="index.html">ראשי</a>
                         <div class="invisible"></div>
@@ -63,62 +62,58 @@
                     </li>
 
                 </ul>
+                <a href="#" id="logo">
+                    <img src="img/header.png" alt="logo">
+                </a>
 
-                <div class="contact-box">
-                    <span class="icon-mobile"></span>
-                    <h6>
-                        050-426-20-21
-                    </h6>
-                </div>
+
+
+
+
             </nav>
         </header>
         <div class="head-grey">
             <h3>צור קשר</h3>
         </div>
-        <div class="central-container">
-            <div class="container">
-                <div class="photo-doctor">
-                    <img src="img/doctor.png" alt="doctor">
-                </div>
-                <div class="form-for-users">
-                    <span class="icon-facebook"></span>
-                    <h5>
-                        <span id="number-light-blue">052-4262021</span>
-                        <span>לקביעת תור לד"ר אלדר חייגו</span>
-                        <br> או השאירו פרטים לכל מידע נוסף
-                    </h5>
-                    <form class="form" id="form">
-                        <textarea type="text" class="form-control" placeholder=":שם"></textarea>
-                        <textarea type="text" class="form-control" placeholder=":מייל"></textarea>
-                        <textarea type="text" class="form-control" placeholder=":נושא"></textarea>
-                        <textarea type="text" class="form-control" placeholder=":הודעה"></textarea>
-                        <h5 id="error">Please, fill the form!</h5>
-                    </form>
 
-                    <button id="btn-form">שליחה</button>
-
-
-                </div>
+        <div class="container">
+            <div class="photo-doctor">
+                <img src="img/doctor.png" alt="doctor">
+            </div>
+            <div class="form-for-users">
+                <span class="icon-facebook"></span>
+                <h5>
+                    <span id="number-light-blue">052-4262021</span>
+                    <span>לקביעת תור לד"ר אלדר חייגו</span>
+                    <br> או השאירו פרטים לכל מידע נוסף
+                </h5>
+                <form class="form" id="form">
+                    <input type="text" class="form-control" placeholder=":שם"></input>
+                    <input type="text" class="form-control" placeholder=":מייל"></input>
+                    <input type="text" class="form-control" placeholder=":נושא"></input>
+                    <textarea type="text" class="form-control" placeholder=":הודעה"></textarea>
+                    <h5 id="error">Please, fill the form!</h5>
+                </form>
+                <button id="btn-form">שליחה</button>
             </div>
         </div>
-
     </div>
-
-
-
-
     <div class="height"></div>
     <footer class="footer">
         <div class="footer-content">
             <h5>
-                <span class="blue">052-4262021</span>
-                <span class="icon-caret-left"></span>
-                לקביעת תור לד"ר אלדר חייגו
+                <span>
+                    <a href="#" class="blue">052-4262021</a>
+                </span>&emsp;
+                <span class="icon-caret-left"></span>&emsp; לקביעת תור לד"ר אלדר חייגו
             </h5>
-            <h5>ד"ר שי מרון אלדר פתרונות כירורגיים להשמנת יתר </h5>
+            <h5 dir="rtl">
+                <span class="sml">2017 </span> &emsp;
+                <span class="bold">
+                    ד"ר שי מרון אלדר </span>&ensp; פתרונות כירורגיים להשמנת יתר
+            </h5>
         </div>
     </footer>
-
     <script src="main.js"></script>
     <script src="page6.js"></script>
 </body>

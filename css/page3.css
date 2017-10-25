@@ -19,7 +19,7 @@
 }
 .text-about-me hr{
     border:none;
-    height: 1px;
+    height: 3px;
     background-color: #5dc5ef;
     margin-top: 10px; 
     width: 60%;  
@@ -31,6 +31,7 @@
 .my-cv  li{
     color: #5dc5ef;
     position: relative;
+    margin-top: 20px;
 }
 .my-cv  span{
     color: black;
@@ -59,20 +60,35 @@
     width: 100%; 
     text-align: right; 
     margin-top: 30px;
-    padding: 40px 20px 20px 20px;
+    
 }
 .believe h3{
     text-align: right;
     color: #0082c6;
     font-weight: 500;
+  
 }
 .believe hr{
     border:none;
-    height: 1px;
+    height: 3px;
     background-color: #5dc5ef;
     margin-top: 10px;  
+    margin-right: 5%;
     width: 30%;  
+    margin-left: 5%;
     display: inline-block;
+}
+.believe h3{
+    margin-right: 5%;
+    padding-top: 2%;
+    margin-left: 5%
+}
+.believe h5{
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%
+   
+    
 }
 @media (min-width: 978px){ 
     .text-about-me{     
@@ -89,10 +105,11 @@
 }    
 @media (max-width: 978px){ 
     .my-photo{
-        text-align: right; 
+        text-align: right;        
     }
     .my-photo img{           
-        width: 80%;
+        width: 50%;
+        margin-right: 12%;
     }
 
     .central-container{

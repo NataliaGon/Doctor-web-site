@@ -5,39 +5,35 @@
     <meta name="viewport" content="width=device-width">
     <title>
     </title>
-
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style-menu.css">
     <link rel="stylesheet" href="css/style-icon-carets.css">
     <link rel="stylesheet" href="css/style-facebook.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/page1.css">
-
 </head>
 
 <body>
-        
     <div class="all-content">
-        <header class="nav-container">
+        <header>
             <nav class="nav-body">
+                <a href="#" class="contact-box">
+                    <span class="icon-mobile"></span>
+                    <h6>
+                        050-426-20-21
+                    </h6>
+                </a>
+
                 <input id="menu" class="menu-link" type="checkbox">
                 <label class="icon-menu" for="menu"></label>
                 <label class="icon-cross" for="menu"></label>
-
-                <a href="tel:+972-50-426-20-21">
+                <a id="a-icon-mob" href="tel:+972-50-426-20-21">
                     <span class="icon-mobile" title="050-426-20-21"></span>
                 </a>
 
-                <div id="logo">
-                    <h3>
-                        <span id="logo-light-blue"> ד"ר </span>
-                        <span id="logo-dark-blue"> שי מרון אלדר </span>
-                    </h3>
-                    <br>
-                    <h6> פתרונות כירורגיים להשמנת יתר וניתוחים זעיר פולשניים</h6>
-                </div>
-                <ul class="list-menu">
 
+
+                <ul class="list-menu" dir="rtl">
                     <li class="nav-link">
                         <a href="index.html">ראשי</a>
                         <div class="circleVisible"></div>
@@ -48,7 +44,7 @@
                     </li>
                     <li class="nav-link">
                         <a href="page3.html">אודות ד"ר שי מרון אלדר</a>
-                        <div class=""></div>
+                        <div class="invisible"></div>
                     </li>
                     <li class="nav-link">
                         <a href="page4.html">שאלות נפוצות</a>
@@ -64,13 +60,14 @@
                     </li>
 
                 </ul>
+                <a href="#" id="logo">
+                    <img src="img/header.png" alt="logo">
+                </a>
 
-                <div class="contact-box">
-                    <span class="icon-mobile"></span>
-                    <h6>
-                        050-426-20-21
-                    </h6>
-                </div>
+
+
+
+
             </nav>
         </header>
         <div class="clear"></div>
@@ -96,11 +93,13 @@
                     <br> .רפואי תל-אביב "איכילוב"
                     <br>
                 </h5>
-                <button class="fist-button">לפרטים נוספים</button>
+                <button class="first-button">
+                    <a href="#">לפרטים נוספים</a>
+                </button>
                 <div class="clear"></div>
                 <br>
-                <a href="tel:+972-50-426-20-21">
-                    <span class="icon-facebook"></span>
+                <a href="#"></a>
+                <span class="icon-facebook"></span>
                 </a>
 
             </div>
@@ -120,126 +119,133 @@
                 <br> .רפואי תל-אביב "איכילוב"
                 <br>
             </h5>
-            <button class="fist-button">לפרטים נוספים</button>
+            <button class="first-button">
+                <a href="#">לפרטים נוספים</a>
+            </button>
         </div>
         <div class="clear"></div>
-        <div class="central-container">
-            <div class="tree-columns-container">
-                <div class="column-container">
-                    <div class="img-container">
-                        <img src="img/hand.png">
-                    </div>
-                    <div class="blue-small">
-                        <h3>
-                            מהם המפתחות
-                            <br> ?להצלחת הניתוח
-                        </h3>
-                    </div>
-                    <div class="blue-big">
-                        <table>
-                            <tr>
-                                <td>
-                                    <h5>לבוא מוכן לניתוח - להכיר את סוגי הניתוחים ולהבין את המהלך הצפוי
-                                    </h5>
-                                </td>
-                                <td class="td-number">1</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>לבחור את המנתח הנכון במקום הנכון - מנתח המתמחה בניתוחי קיצור קיבה, בעל ניסיון עשיר וסביבת
-                                        עבודה עם כל המערך התומך הנדרש
-                                    </h5>
-                                </td>
-                                <td class="td-number">2</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>להקפיד על ההנחיות לאחר הניתוח - תזונה, פעילות גופנית ונטילת ויטמינים ותוספי מזון
-                                    </h5>
-                                </td>
-                                <td class="td-number">3</td>
-                            </tr>
-                        </table>
 
-                    </div>
+        <div class="tree-columns-container">
+            <div class="column-container">
+                <div class="img-container">
+                    <img src="img/hand.png">
+                </div>
+                <div class="blue-small">
+                    <h3>
+                        מהם המפתחות
+                        <br> ?להצלחת הניתוח
+                    </h3>
+                </div>
+                <div class="blue-big">
+                    <table>
+                        <tr>
+                            <td>
+                                <h5>לבוא מוכן לניתוח - להכיר את סוגי הניתוחים ולהבין את המהלך הצפוי
+                                </h5>
+                            </td>
+                            <td class="td-number">1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>לבחור את המנתח הנכון במקום הנכון - מנתח המתמחה בניתוחי קיצור קיבה, בעל ניסיון עשיר וסביבת
+                                    עבודה עם כל המערך התומך הנדרש
+                                </h5>
+                            </td>
+                            <td class="td-number">2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>להקפיד על ההנחיות לאחר הניתוח - תזונה, פעילות גופנית ונטילת ויטמינים ותוספי מזון
+                                </h5>
+                            </td>
+                            <td class="td-number">3</td>
+                        </tr>
+                    </table>
 
                 </div>
-                <div class="column-container">
-                    <div class="img-container">
-                        <img src="img/notes.png">
-                    </div>
-                    <div class="blue-small">
-                        <h3>
-                            ?שלי BMB-מה ה
-                        </h3>
-                    </div>
-                    <div class="blue-big">
-                        <h4>
-                            .מדד מסת הגוף הינו חישוב פשוט של
-                            <br>משקל הגוף חלקי ריבוע הגובה
-                        </h4>
-                        <button>
-                            חשב/י את ה-BMI שלך
-                        </button>
-                    </div>
+
+            </div>
+            <div class="column-container">
+                <div class="img-container">
+                    <img src="img/notes.png">
                 </div>
-                <div class="column-container">
-                    <div class="img-container">
-                        <img src="img/weigher.png">
-                    </div>
-                    <div class="blue-small">
-                        <h3>
-                            מהם הקריטריונים
-                            <br>?לניתוח קיצור קיבה
-                        </h3>
-                    </div>
-                    <div class="blue-big">
-                        <table>
-                            <tr>
-                                <td>
-                                    <h5>BMI > 40
+                <div class="blue-small">
+                    <h3>
+                        ?שלי BMB-מה ה
+                    </h3>
+                </div>
+                <div class="blue-big">
+                    <h4>
+                        .מדד מסת הגוף הינו חישוב פשוט של
+                        <br>משקל הגוף חלקי ריבוע הגובה
+                    </h4>
+                    <button>
+                        <a href="#"> חשב/י את ה-BMI שלך
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="column-container">
+                <div class="img-container">
+                    <img src="img/weigher.png">
+                </div>
+                <div class="blue-small">
+                    <h3>
+                        מהם הקריטריונים
+                        <br>?לניתוח קיצור קיבה
+                    </h3>
+                </div>
+                <div class="blue-big">
+                    <table>
+                        <tr>
+                            <td>
+                                <h5>BMI > 40
 
-                                    </h5>
-                                </td>
-                                <td class="td-number">1</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>BMI > 35 עם תחלואה נלווית הקשורה להשמנת יתר כגון סכרת, יתר לחץ דם, עודף כולסטרול, דום
-                                        נשימה בשינה, בעיות אורטופדיות, הפרעה בפוריות, כבד שומני ועוד
-                                    </h5>
-                                </td>
-                                <td class="td-number">2</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>BMI > 30 לאחר כישלון ניתוח קיצור קיבה קודם או עם סכרת קשה ולא מאוזנת (במסגרת מחקרית)</h5>
-                                </td>
-                                <td class="td-number">3</td>
-                            </tr>
-                        </table>
+                                </h5>
+                            </td>
+                            <td class="td-number">1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>BMI > 35 עם תחלואה נלווית הקשורה להשמנת יתר כגון סכרת, יתר לחץ דם, עודף כולסטרול, דום נשימה
+                                    בשינה, בעיות אורטופדיות, הפרעה בפוריות, כבד שומני ועוד
+                                </h5>
+                            </td>
+                            <td class="td-number">2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>BMI > 30 לאחר כישלון ניתוח קיצור קיבה קודם או עם סכרת קשה ולא מאוזנת (במסגרת מחקרית)</h5>
+                            </td>
+                            <td class="td-number">3</td>
+                        </tr>
+                    </table>
 
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="clear"></div>
+
+
         <div class="height"></div>
     </div>
     <footer class="footer">
         <div class="footer-content">
             <h5>
-                <span class="blue">052-4262021</span>
-                <span class="icon-caret-left"></span>
-                לקביעת תור לד"ר אלדר חייגו
+                <span>
+                    <a href="#" class="blue">052-4262021</a>
+                </span>&emsp;
+                <span class="icon-caret-left"></span>&emsp; לקביעת תור לד"ר אלדר חייגו
             </h5>
-            <h5>ד"ר שי מרון אלדר פתרונות כירורגיים להשמנת יתר </h5>
+            <h5 dir="rtl">
+                <span class="sml">2017 </span> &emsp;
+                <span class="bold">
+                    ד"ר שי מרון אלדר </span>&ensp; פתרונות כירורגיים להשמנת יתר
+            </h5>
         </div>
     </footer>
     <div class="clear"></div>
     <script src="main.js"></script>
-   
 </body>
 
 </html>

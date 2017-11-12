@@ -88,11 +88,13 @@
                     <br> או השאירו פרטים לכל מידע נוסף
                 </h5>
                 <form class="form" id="form">
-                    <input type="text" class="form-control" placeholder=":שם"></input>
-                    <input type="text" class="form-control" placeholder=":מייל"></input>
-                    <input type="text" class="form-control" placeholder=":נושא"></input>
-                    <textarea type="text" class="form-control" placeholder=":הודעה"></textarea>
+                    <input type="text" class="form-control" id="name" placeholder=":שם"></input>
+                    <input type="text" class="form-control" id="mail" placeholder=":מייל"></input>
+                    <input type="text" class="form-control" id="topic" placeholder=":נושא"></input>
+                    <textarea type="text" class="form-control" id="message" placeholder=":הודעה"></textarea>
                     <h5 id="error">Please, fill the form!</h5>
+                    <h5 id="mail-error">Write correct email!</h5>
+                    <h5 id="success">We got your information!</h5>
                 </form>
                 <button id="btn-form">שליחה</button>
             </div>

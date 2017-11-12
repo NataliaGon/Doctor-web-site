@@ -122,6 +122,10 @@ button{
   color:#1885c8;
   float: right;
 }
+.contact-box h6{
+  font-weight:bold;
+  font-size: 0.65em;
+}
 .contact-box .icon-mobile{
   font-size: 0.8em;
   margin-top: 4px;
@@ -137,7 +141,7 @@ button{
 .invisible{
   display: none;
 }
-@media (min-width: 1010px) {  
+@media (min-width: 1011px) {  
   .nav-body{
     display: -webkit-box;
     display: -ms-flexbox;

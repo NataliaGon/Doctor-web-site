@@ -33,6 +33,11 @@
     resize: none;
     font-weight: 600;    
 }
+.form-control{
+    font-family: 'Open Sans Hebrew';
+    font-size: 1em;
+}
+
 form input{
     height: 35px;
 }
@@ -56,6 +61,14 @@ form textarea{
 #error{
     display: none;
     color:red;
+}
+#mail-error{
+    display: none;
+    color:red;
+}
+#success{
+    display: none;
+    color:green;
 }
 @media (min-width: 1140px){
     .container{

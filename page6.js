@@ -1,37 +1,104 @@
 
-var btnForm = document.getElementById('btn-form');
-btnForm.addEventListener('click', function (){
-//     console.log('e');
-    
-//     var text= document.querySelectorAll('.form textarea');
-//     for (var i = 0; i < text.length; i++){
-       
-//         var t=text[i];
+let btnForm = document.getElementById('btn-form');
+btnForm.addEventListener('click', function () {
 
-//         var valueText='';
-//         valueText += t.value;
+  
+  
+   
+  const mailError = document.getElementById('mail-error');
+  const success = document.getElementById('success');
+  const error = document.getElementById('error');
+  let name = document.getElementById('name');
+  let mail = document.getElementById('mail'); 
+  let topic = document.getElementById('topic');
+  let message = document.getElementById('message');
+  let testForm = 0;
+  let testEmail = 0;
 
-//         if (data.text != null && data.text.value.length < 3)
-//         {
-//         alert('Заполните поле "Сообщение"');
-//         return false;}
+ 
 
-// }
-var form = document.getElementById('form');
-var elems = form.elements;
-var error=document.getElementById('error');
-console.log(elems);
-
-  for (var i=0; i < elems.length; i++){
-      var textarea=elems[i];
-     var t=textarea.value.trim();
-      console.log(textarea);
-      if (t==''){
-          console.log('fserf');
-        textarea.style.border = '2px solid red';
-        error.style.display = "block";
-      } 
+  let nameValue = name.value.trim();
+  if (nameValue == '') {
+    name.style.border = '2px solid red';
+    error.style.display = "block";
+    success.style.display = "none";
+  } else {
+    testForm += 1;
+    name.style.border = '1px solid #5dc5ef';
+    if (testForm === 4) {
+      error.style.display = "none";
+    }
   }
-}
-);
+
+  let mailValue = mail.value.trim();
+  if (mailValue == '') {
+    mail.style.border = '2px solid red';
+    error.style.display = "block";
+    success.style.display = "none";
+  } else {
+    testForm += 1;
+    mail.style.border = '1px solid #5dc5ef';
+    if (testForm === 4) {
+      error.style.display = "none";
+    }
+  }
+  if (mailValue.indexOf("@") == -1) {
+    mailError.style.display = "block";
+    mail.style.border = '2px solid red';
+    success.style.display = "none";
+  }
+  else {
+    testEmail += 1;
+    if (testEmail === 2) {
+      mailError.style.display = "none";
+      mail.style.border = '1px solid #5dc5ef';
+    }
+  }
+  if (mailValue.indexOf(".") == -1) {
+    mailError.style.display = "block";
+    mail.style.border = '2px solid red';
+    success.style.display = "none";
+
+  }
+  else {
+    testEmail += 1;
+    if (testEmail === 2) {
+      mailError.style.display = "none";
+      mail.style.border = '1px solid #5dc5ef';
+    }
+  }
+
+  let topicValue = topic.value.trim();
+  if (topicValue == '') {
+    topic.style.border = '2px solid red';
+    error.style.display = "block";
+    success.style.display = "none";
+  } else {
+    testForm += 1;
+    topic.style.border = '1px solid #5dc5ef';
+    if (testForm === 4) {
+    error.style.display = "none";
+    }
+  }
+
+  let messageValue = message.value.trim();
+  if (messageValue == '') {
+    message.style.border = '2px solid red';
+    error.style.display = "block";
+    success.style.display = "none";
+  } else {
+    testForm += 1;
+    message.style.border = '1px solid #5dc5ef';
+    if (testForm === 4) {
+    error.style.display = "none";
+    }
+  }
+
+
+  if (testEmail == 2 && testForm == 4) {
+    success.style.display = "block";   
+    
+  }
+
+});
 

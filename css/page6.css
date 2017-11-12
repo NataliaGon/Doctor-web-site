@@ -9,7 +9,7 @@
     width: 400px;       
 } 
 .form-for-users{     
-    width: 450px;  
+    max-width: 450px;  
     margin-top: 20px; 
     text-align: right;
 }

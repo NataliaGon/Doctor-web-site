@@ -36,31 +36,26 @@
 .my-cv  span{
     color: black;
 }
-/* li:before {
+li:before {
     content: "";
     position: absolute;
     right: -17px;
-    border-left: 1px solid #5dc5ef;
+    border-left: 2px solid #5dc5ef;
     width: 1px;
-    height: 58px; // change with my-cv.height in less
-  }
-
+    height: 75px; // change with my-cv.height in less
+}
   li:first-child:before {
     top: 15px;//Don't draw before first bullet
-  }
-
+}
   li:last-child:before {
     height: 6px; //Don't draw after last bullet
-  }
-   */
-
+}
 .believe{    
     background: #eaf7fd;  
     height: 100%;
     width: 100%; 
     text-align: right; 
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 .believe h3{
     text-align: right;
@@ -86,11 +81,34 @@
 .believe h5{
     margin-right: 5%;
     margin-bottom: 5%;
-    margin-left: 5%
-   
-    
+    margin-left: 5%;    
 }
-@media (min-width: 978px){ 
+@media (max-width: 1000px){ 
+    li:before {       
+        height: 95px; 
+    }
+} 
+@media (max-width: 978px){ 
+    li:before {       
+        height: 57px; 
+    }
+} 
+@media (max-width: 557px){ 
+    li:before {       
+        height: 75px; 
+    }
+}
+@media (max-width: 313px){ 
+    li:before {       
+        height: 95px; 
+    }
+}
+@media (max-width: 203px){ 
+    li:before {       
+        height: 118px; 
+    }
+}
+@media (min-width: 979px){ 
     .text-about-me{     
         width: 52%; 
     }
